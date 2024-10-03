@@ -1,13 +1,9 @@
-/* eslint-disable prettier/prettier */
+import { Redirect, useRouter } from "expo-router";
+import { useEffect } from "react";
 import { Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = () => {
-  return (
-    <SafeAreaView>
-      <Text>Home</Text>
-    </SafeAreaView>
-  );
+  return <Redirect href={"/(auth)/welcome"} />;
 };
 
 export default Home;
